@@ -9,7 +9,7 @@ require("dotenv").config();
  */
 if (process.argv[2] !== "test") {
     const server = new StudySeatServer();
-    const listenPort: number = parseInt(process.env.LISTEN_PORT as string);
+    const listenPort: number = parseInt(process.env.PORT as string);
     server.start(listenPort);
 } else {
 

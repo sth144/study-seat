@@ -193,7 +193,7 @@ class LoginForm extends Component<ILoginFormProps, ILoginFormState> {
                     </div>
                     <div className="flex-row" style={{justifyContent: "flex-end"}}>
                         <span style={{width:"50%"}}>
-                            Don't have an account? 
+                            Don't have an account yet? 
                         </span>
                         <Link to="/register">Register</Link>
                     </div>

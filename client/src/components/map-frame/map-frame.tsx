@@ -346,9 +346,8 @@ class MapFrame extends Component<IMapFrameProps, IMapFrameState> {
      * Render the JSX template on the DOM
      */
     render() {
-        if (!this.props.isLoggedIn) {
-            return <Redirect to="/login"></Redirect>
-        } 
+        // if (!this.props.isLo
+        
         return (
             <div style={{height: "100%"}}>
                 <div style={{height: "15%"}}>

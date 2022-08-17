@@ -68,7 +68,13 @@ class App extends Component<IAppComponentProps, IAppComponentState> {
                             <div className="flex-row" style={{justifyContent: "flex-end"}}>
                                 <Button onClick={this.logout}>Log Out</Button>
                             </div>
-                        ) : ( "" )
+                        ) : (
+                          !window.location.pathname.includes("login") ? 
+                            <div className="flex-row" style={{justifyContent: "flex-end"}}>
+                              <Button onClick={() => window.location.replace("/login")}>Login</Button>
+                            </div>
+                          : ""
+                        )
                     }
                     <h1>StudySeat</h1>
                 </header>
